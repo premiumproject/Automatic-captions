@@ -1,3 +1,12 @@
+ 
+pycryptodomex
+pyrofork
+TgCrypto==1.2.5
+cloudscraper
+bs4
+yt-dlp==2024.08.06
+
+
 pyrogram==2.0.106
 tgcrypto
 requests
@@ -7,9 +16,7 @@ aiofiles
 asyncio
 humanize
 wget
-yt-dlp
 hachoir
-bs4
 httpx[http2]
 img2pdf
 tglogging
