@@ -2,6 +2,14 @@ from config import Config
 from pyrogram import Client as bot, idle
 import asyncio
 import logging
+from flask import Flask
+
+
+app = Flask(__name__)
+
+
+
+
 
 logging.basicConfig(
     level=logging.INFO,    
@@ -36,3 +44,15 @@ if __name__ == "__main__":
         await idle()
     asyncio.get_event_loop().run_until_complete(main())
     LOGGER.info("<--- Bot Stopped --->")
+
+
+
+
+@app.route('/')
+def hello_world():
+    return 'Hello from Tech VJ'
+
+
+if __name__ == "__main__":
+    app.run()
+  
